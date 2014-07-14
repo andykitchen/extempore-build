@@ -12,5 +12,5 @@ were doing it manually.
 The output will be in the directory ./usr
 
 The magic of making the binary build relocatable is using
-the @rpath linker magic of dyld. See copy1.sh and copy2.sh
+the @rpath linker magic of dyld. See copy-prebuild.sh and copy-postbuild.sh
 for more details.

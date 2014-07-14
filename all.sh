@@ -19,8 +19,8 @@ git submodule update --init
   source build.sh
 )
 
-source copy1.sh
+source copy-prebuild.sh
 source build-extempore.sh
-source copy2.sh
+source copy-postbuild.sh
 
 source build-stdlib.sh
