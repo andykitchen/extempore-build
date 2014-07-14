@@ -1,0 +1,10 @@
+--- sndfile-play.c.orig	2014-07-14 12:10:37.000000000 +1000
++++ sndfile-play.c	2014-07-14 12:10:47.000000000 +1000
+@@ -58,7 +58,6 @@
+ 	#include 	<sys/soundcard.h>
+ 
+ #elif (defined (__MACH__) && defined (__APPLE__))
+-	#include <Carbon.h>
+ 	#include <CoreAudio/AudioHardware.h>
+ 
+ #elif defined (HAVE_SNDIO_H)

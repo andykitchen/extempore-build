@@ -24,3 +24,11 @@ source build-extempore.sh
 source copy-postbuild.sh
 
 source build-stdlib.sh
+
+(
+  cd external
+  source all.sh
+)
+
+source copy-external.sh
+source build-stdlib-external.sh
