@@ -13,13 +13,16 @@ libs/xtminstruments.dylib: libs/core/instruments.xtm
 libs/xtmaudio_dsp.dylib: libs/core/audio_dsp.xtm
 	$(XTM) $<
 
-external: libs/xtmfft.dylib libs/xtmsndfile.dylib libs/xtmaudio_dsp_ext.dylib libs/xtminstruments_ext.dylib
+external: libs/xtmfft.dylib libs/xtmsndfile.dylib libs/xtmaudio_dsp_ext.dylib libs/xtminstruments_ext.dylib libs/xtmrtmidi.dylib
 
 libs/xtmfft.dylib: libs/external/fft.xtm
+	$(XTM) $<
+
+libs/xtmsndfile.dylib: libs/external/sndfile.xtm
 	$(XTM) $<
 
 libs/xtmaudio_dsp_ext.dylib: libs/external/audio_dsp_ext.xtm
 	$(XTM) $<
 
-libs/xtminstruments_ext.dylib: libs/external/instruments_ext.xtm
+libs/xtmrtmidi.dylib: libs/external/rtmidi.xtm
 	$(XTM) $<
