@@ -18,14 +18,12 @@ if [ ! -e $SRC ]; then
   tar xzf $ARCHIVE -C src
 fi
 
-(
-  cd $SRC/lib/AsmParser
-
-  if [ ! -f LLParser.cpp.orig ]; then
-    cp LLParser.cpp LLParser.cpp.orig
+if [ ! -f $SRC/lib/AsmParser/LLParser.cpp.orig ]; then
+  (
+    cd $SRC/lib/AsmParser
     patch
-  fi
-) < ../extempore/extras/llparser.patch
+  ) < ../extempore/extras/llparser.patch
+fi
 
 (
   cd build

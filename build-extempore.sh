@@ -2,8 +2,6 @@
 
 set -e
 
-git submodule update --init
-
 (
   cd extempore
 

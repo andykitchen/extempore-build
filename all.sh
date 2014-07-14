@@ -2,6 +2,8 @@
 
 set -e
 
+git submodule update --init
+
 (
   cd portaudio
   source build.sh
