@@ -1,0 +1,16 @@
+This project builds a relocatable binary distribution of extempore.
+
+To kick everything off run:
+
+$ ./all.sh
+
+Most of the scripts should be self explanatory. They just
+automate building and copying in a reasonably straight forward way.
+They should be basically what you would type in the terminal if you
+were doing it manually.
+
+The output will be in the directory ./usr
+
+The magic of making the binary build relocatable is using
+the @rpath linker magic of dyld. See copy1.sh and copy2.sh
+for more details.
