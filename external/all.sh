@@ -11,3 +11,8 @@ set -e
   cd libsndfile
   source build.sh
 )
+
+(
+  cd rtmidi
+  source build.sh
+)
