@@ -32,3 +32,5 @@ source build-stdlib.sh
 
 source copy-external.sh
 source build-stdlib-external.sh
+
+source package.sh
