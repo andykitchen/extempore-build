@@ -21,6 +21,7 @@ fi
 if [ ! -f $SRC/lib/AsmParser/LLParser.cpp.orig ]; then
   (
     cd $SRC/lib/AsmParser
+    cp LLParser.cpp LLParser.cpp.orig
     patch
   ) < ../extempore/extras/llparser.patch
 fi

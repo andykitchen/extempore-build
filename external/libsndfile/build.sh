@@ -21,6 +21,7 @@ fi
 if [ ! -f $SRC/programs/sndfile-play.c.orig ]; then
   (
     cd $SRC/programs
+    cp sndfile-play.c sndfile-play.c.orig
     patch
   ) < sndfile-play.c.patch
 fi
